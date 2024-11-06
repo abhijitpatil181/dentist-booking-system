@@ -4,7 +4,7 @@
   width: 100vw;
   column-gap: 2rem;
   height: 8vh;
-  border-bottom: 1px solid  #656363;
+  border-bottom: 1px solid #656363;
 }
 
 .dashboard-container {
@@ -25,18 +25,18 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;;
+  color: #000;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .vertical-line {
-  width: 2px; 
-  height: 100%; 
+  width: 2px;
+  height: 100%;
   background-color: #000;
-  margin: 0 15px; 
+  margin: 0 15px;
 }

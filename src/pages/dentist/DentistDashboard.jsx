@@ -1,13 +1,14 @@
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid' 
+import dayGridPlugin from '@fullcalendar/daygrid';
+import FullCalendar from '@fullcalendar/react';
+
 import CustomerDashboard from '../customer/CustomerDashboard';
 
-const DentistDashboard=()=>{
+const DentistDashboard = () => {
   return (
     <>
-     <CustomerDashboard/>
+      <CustomerDashboard />
     </>
-  )
-}
+  );
+};
 
 export default DentistDashboard;

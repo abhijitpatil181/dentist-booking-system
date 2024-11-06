@@ -1,10 +1,10 @@
-import { LoginForm } from "@/components";
+import { LoginForm } from '@/components';
 
-const DentistLogin = ({handleSubmit}) => {
-	return (
-		<>
-			<LoginForm handleSubmit={handleSubmit} />
-		</>
-	);
+const DentistLogin = ({ handleSubmit }) => {
+  return (
+    <>
+      <LoginForm handleSubmit={handleSubmit} />
+    </>
+  );
 };
 export default DentistLogin;

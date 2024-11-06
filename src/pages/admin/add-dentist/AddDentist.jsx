@@ -1,15 +1,14 @@
-import { Button, TextField } from "@/components";
-import { Register } from "@/pages/login/components/components";
-import { useState } from "react";
+import { useState } from 'react';
 
+import { Button, TextField } from '@/components';
+import { Register } from '@/pages/login/components/components';
 
-const AddDentist=()=>{
-
+const AddDentist = () => {
   return (
     <>
-     <Register formType="add-dentist"/>
+      <Register formType="add-dentist" />
     </>
-  )
-}
+  );
+};
 
 export default AddDentist;

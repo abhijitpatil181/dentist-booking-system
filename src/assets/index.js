@@ -1,1 +1,1 @@
-export {default as Success_Svg} from "@/assets/success.svg"
+export { default as Success_Svg } from '@/assets/success.svg';

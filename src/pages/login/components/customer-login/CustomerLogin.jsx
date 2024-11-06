@@ -1,10 +1,10 @@
-import { LoginForm } from "@/components";
+import { LoginForm } from '@/components';
 
-const CustomerLogin = ({handleSubmit}) => {
-	return (
-		<>
-			<LoginForm handleSubmit={handleSubmit} />
-		</>
-	);
+const CustomerLogin = ({ handleSubmit }) => {
+  return (
+    <>
+      <LoginForm handleSubmit={handleSubmit} />
+    </>
+  );
 };
 export default CustomerLogin;

@@ -2,13 +2,12 @@
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  
 }
 
 .appointment-table thead th {
-  background-color: #F4F0F0;
+  background-color: #f4f0f0;
   padding: 8px;
-  border:none; /* Border for header cells */
+  border: none; /* Border for header cells */
   font-size: 1.2rem;
   font-weight: 400;
   color: #000000;
@@ -19,7 +18,7 @@
   border: none; /* Border for table cells */
   font-size: 1.1rem;
   font-weight: 400;
-  color:#000000;
+  color: #000000;
 }
 
 .appointment-table tbody tr:nth-child(even) {

@@ -1,6 +1,6 @@
-.fc-event-main{
+.fc-event-main {
   height: 2rem;
-  width:7rem;
+  width: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   border-radius: 3px;
 }
 
-.fc-event-title{
+.fc-event-title {
   font-size: 1rem;
   color: black;
 }

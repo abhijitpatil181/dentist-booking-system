@@ -1,5 +1,4 @@
-import React from 'react';
-import './spinner.css'; // Import your CSS file
+import './spinner.css';
 
 const Spinner = ({ message }) => {
   return (

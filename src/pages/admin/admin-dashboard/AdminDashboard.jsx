@@ -1,25 +1,26 @@
-import useFirestoreCollection from "@/hooks/useFirestoreCollection";
-import "./adminDashboard.css"; // Importing CSS for styling
-import { appointments } from "@/mock/dashboard.mock";
-import { useEffect, useState } from "react";
-import { getAdminDashboardData } from "@/utils/helper";
+import { useEffect, useState } from 'react';
+
+import useFirestoreCollection from '@/hooks/useFirestoreCollection';
+// Importing CSS for styling
+import { appointments } from '@/mock/dashboard.mock';
+import { getAdminDashboardData } from '@/utils/helper';
+
+import './adminDashboard.css';
 
 const AdminDashboard = () => {
-  const {data:bookingsData}=useFirestoreCollection('bookings');
-  const {data:servicesData}=useFirestoreCollection('services')
-  const [dashboardData,setDashboardData]=useState([])
+  const { data: bookingsData } = useFirestoreCollection('bookings');
+  const { data: servicesData } = useFirestoreCollection('services');
+  const [dashboardData, setDashboardData] = useState([]);
 
-  useEffect(()=>{
-    if(bookingsData.length>0 && servicesData.length>0){
-     
-      const data=getAdminDashboardData(bookingsData,servicesData);
-      setDashboardData(data)
+  useEffect(() => {
+    if (bookingsData.length > 0 && servicesData.length > 0) {
+      const data = getAdminDashboardData(bookingsData, servicesData);
+      setDashboardData(data);
     }
-
-  },[bookingsData,servicesData])
+  }, [bookingsData, servicesData]);
 
   return (
-    <div style={{paddingTop:'3rem'}}>
+    <div style={{ paddingTop: '3rem' }}>
       <table className="appointment-table">
         <thead>
           <tr>
@@ -30,7 +31,7 @@ const AdminDashboard = () => {
           </tr>
         </thead>
         <tbody>
-          {dashboardData.map((appointment,index) => (
+          {dashboardData.map((appointment, index) => (
             <tr key={index}>
               <td>{appointment.appointmentDate}</td>
               <td>{appointment.patientName}</td>

@@ -1,8 +1,8 @@
 /* customDialog.css */
 .overlay {
   position: fixed; /* Change to absolute positioning */
-  top: 2rem;             /* Align to the top */
-  right: 1rem;           /* Align to the right */    
+  top: 2rem; /* Align to the top */
+  right: 1rem; /* Align to the right */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   display: flex;
   justify-content: center;

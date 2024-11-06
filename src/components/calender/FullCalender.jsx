@@ -1,12 +1,3 @@
-
-
-const FullCalendar=()=>{
-
-  
-
-  return (
-    <>
-
-    </>
-  )
-}
+const FullCalendar = () => {
+  return <></>;
+};

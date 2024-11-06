@@ -1,20 +1,20 @@
-import { RouterProvider } from "react-router-dom";
-import "./App.css";
-import { router } from "./router/router";
+import { useState } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from "react-toastify";
-import { LoginContext } from "./context/logInConext";
-import { useState } from "react";
+
+import './App.css';
+import { LoginContext } from './context/logInConext';
+import { router } from './router/router';
 
 function App() {
-
-  const [logInDetails,setLogInDetails]=useState({username:'',role:''});
+  const [logInDetails, setLogInDetails] = useState({ username: '', role: '' });
 
   return (
     <>
-      <LoginContext.Provider value={{logInDetails,setLogInDetails}}>
+      <LoginContext.Provider value={{ logInDetails, setLogInDetails }}>
         <RouterProvider router={router} />
-      
+
         <ToastContainer
           position="top-right"
           autoClose={5000}
