@@ -2,15 +2,6 @@
 
 This is a **Dentist Booking System** web application built with **React** and **Vite**. It allows users to book dental appointments, view dentist availability, and manage their appointments.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 To run this project locally, follow the steps below:
