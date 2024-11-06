@@ -3,20 +3,27 @@ import "./sideBar.css"
 import { useNavigate, useParams ,useLocation} from "react-router-dom";
 import useLoginContext from "@/hooks/useLoginConext";
 
-let menuOptions=[{label:'dashboard',Name:'Dashboard'},{label:'add-service',Name:'Add Service'},{label:"view-report",Name:"View Report"},{label:'add-dentist',Name:"Add Dentist"}]
+const menuOptions1=[{label:'dashboard',Name:'Dashboard'},{label:'add-service',Name:'Add Service'},{label:"view-report",Name:"View Report"},{label:'add-dentist',Name:"Add Dentist"}]
 
 
 const SideBar=()=>{
   const {user}=useParams();
   const [selectedTab,setSelectedTab]=useState('dashboard');
+  const [menuOptions,setMenuOptions]=useState([{label:'dashboard',Name:'Dashboard'},{label:'add-service',Name:'Add Service'},{label:"view-report",Name:"View Report"},{label:'add-dentist',Name:"Add Dentist"}]);
 
   const navigate=useNavigate();
+ 
   
+  useEffect(()=>{
+    if(user && user!=="admin"){
+      setMenuOptions([{label:'dashboard',Name:'Dashboard'}])
+    }
 
+  },[user])
 
-  if(user!=='admin'){
-    menuOptions=[{label:'dashboard',Name:'Dashboard'}]
-  }
+  // if(user!=='admin'){
+  //   menuOptions=[{label:'dashboard',Name:'Dashboard'}]
+  // }
 
 
 
