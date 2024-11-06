@@ -14,18 +14,18 @@ const Dialog = ({
   if (!isOpen) return null; // Don't render if not open
 
   return (
-    <div className="dialog-overlay">
-      <div className="dialog-box" style={{ minWidth: width,maxHeight: height }}>
-        <div className="dialog-header">
+    <div className="dialogs-overlay">
+      <div className="dialogs-box" style={{ minWidth: width,maxHeight: height }}>
+        <div className="dialogs-header">
           <p style={{fontWeight:400,fontSize:'1.5rem',color:'#000000'}}>{title}</p>
           <button className="close-button" onClick={onClose}>✖</button>
         </div>
-        <div className="dialog-content">
+        <div className="dialogs-content">
           {content}
         </div>
-        <div className="dialog-footer">
-          <button className="dialog-button" onClick={onClose}>{cancelText}</button>
-          {confirmText && <button className="dialog-button confirm-button" onClick={onConfirm}>{confirmText}</button>}
+        <div className="dialogs-footer">
+          <button className="dialogs-button" onClick={onClose}>{cancelText}</button>
+          {confirmText && <button className="dialogs-button confirm-button" onClick={onConfirm}>{confirmText}</button>}
         </div>
       </div>
     </div>

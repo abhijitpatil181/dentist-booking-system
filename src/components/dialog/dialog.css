@@ -1,4 +1,4 @@
-.dialog-overlay {
+.dialogs-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.dialog-box {
+.dialogs-box {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -20,7 +20,7 @@
  
 }
 
-.dialog-header {
+.dialogs-header {
   display: flex;
   justify-content: space-between;
   row-gap: 1rem;
@@ -30,18 +30,18 @@
   font-weight: 500;
 }
 
-.dialog-content {
+.dialogs-content {
   flex-grow: 1;
   box-sizing: content-box;
 }
 
-.dialog-footer {
+.dialogs-footer {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
 }
 
-.dialog-button {
+.dialogs-button {
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;
