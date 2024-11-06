@@ -275,7 +275,8 @@ const Register=({formType=""})=>{
 								I accept terms and condition
 							</label>
 						</div>}
-						{
+						</div>
+						<div style={{display:'flex',justifyContent:'space-between'}}>
 							<Button
 							style={{
 								width: 'calc(50% - 1rem)',
@@ -291,7 +292,7 @@ const Register=({formType=""})=>{
 						>
 							Cancel
 						</Button>
-						}
+						
 
 						<Button
 							style={{
@@ -306,8 +307,10 @@ const Register=({formType=""})=>{
 						>
 							{formType==='register' ? 'Sign Up':'Add Dentist'}
 						</Button>
+						</div>
+							
 					</div>
-				</div>
+				
 			</form>
 		</>
 	);

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/services/firebase';
+import { onSnapshot } from 'firebase/firestore';
 
 const useFirestoreCollection = (collectionName) => {
     const [data, setData] = useState([]);
@@ -8,23 +9,24 @@ const useFirestoreCollection = (collectionName) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                setLoading(true); // Start loading
-                const querySnapshot = await getDocs(collection(db, collectionName));
+        const unsubscribe = onSnapshot(
+            collection(db, collectionName),
+            (querySnapshot) => {
                 const documents = querySnapshot.docs.map(doc => ({
                     id: doc.id,
                     ...doc.data(),
                 }));
-                setData(documents); // Set the data
-            } catch (err) {
+                setData(documents); // Set the real-time data
+                setLoading(false); // End loading
+            },
+            (err) => {
                 setError(err); // Set the error if there's an issue
-            } finally {
                 setLoading(false); // End loading
             }
-        };
+        );
 
-        fetchData();
+        // Cleanup listener when component is unmounted
+        return () => unsubscribe();
     }, [collectionName]); // Refetch if the collectionName changes
 
     return { data, loading, error };
