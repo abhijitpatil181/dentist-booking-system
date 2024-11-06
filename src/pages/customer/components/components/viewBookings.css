@@ -1,0 +1,19 @@
+.fc-event-main{
+  height: 2rem;
+  width:7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  cursor: pointer;
+}
+
+.fc-event {
+  border-color: black;
+  border-radius: 3px;
+}
+
+.fc-event-title{
+  font-size: 1rem;
+  color: black;
+}

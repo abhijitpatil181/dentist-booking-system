@@ -1,0 +1,16 @@
+.time-slot {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 45%;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Optional smooth transition */
+}
+
+.time-slot:hover {
+  background-color: #f0f0f0; /* Change color on hover */
+}

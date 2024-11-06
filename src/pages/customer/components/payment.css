@@ -1,0 +1,25 @@
+.payment-tabs {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.payment-tab {
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  color: grey; /* Default color for inactive tabs */
+  transition: color 0.3s ease;
+}
+
+.payment-tab h3 {
+  margin: 0; /* Remove default margin */
+}
+
+.payment-tab.active {
+  border-bottom: 2px solid black; /* Active tab border */
+  color: black; /* Active tab color */
+}
+
+.payment-tab.inactive:hover {
+  color: darkgrey; /* Change color on hover for inactive tabs */
+}

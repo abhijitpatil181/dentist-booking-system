@@ -1,0 +1,25 @@
+/* customDialog.css */
+.overlay {
+  position: fixed; /* Change to absolute positioning */
+  top: 2rem;             /* Align to the top */
+  right: 1rem;           /* Align to the right */    
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+  box-sizing: content-box;
+}
+
+.dialog-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dialog-content button {
+  font-size: 1rem;
+  cursor: pointer;
+}

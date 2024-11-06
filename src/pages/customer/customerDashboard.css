@@ -1,0 +1,33 @@
+
+.fc-scrollgrid-sync-inner{
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.fc-daygrid-day-frame{
+  cursor: pointer;
+ 
+
+}
+/* .fc-event-main{
+  background-color: green !important;
+} */
+
+.green-event {
+  background-color: #4caf50 !important;
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+.reusable-button {
+	padding: 0.8rem 1.2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+
+	background-color: #1976d2;
+}
+
+/* Add hover effect directly without nesting */
+.reusable-button:hover {
+	background-color: #115293;
+}
+
+/* Disabled state styling */
+.reusable-button:disabled {
+	background-color: #b0b0b0;
+	cursor: not-allowed;
+}

@@ -1,0 +1,40 @@
+/* Dropdown.css */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  font-family: Arial, sans-serif; /* Font for the dropdown */
+}
+
+.dropdown-label {
+  margin-bottom: 5px; /* Spacing between label and dropdown */
+  font-weight: bold; /* Bold label */
+  color: #333; /* Dark color for label */
+}
+
+.dropdown-select {
+  padding: 10px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size for dropdown options */
+  color: #333; /* Dark color for text */
+  background-color: #fff; /* White background */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Hover effect */
+.dropdown-select:hover {
+  border-color: #007bff; /* Blue border on hover */
+}
+
+/* Focus effect */
+.dropdown-select:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue shadow */
+}
+
+/* Style for the default option */
+.dropdown-select option {
+  color: #999; /* Light grey color for default option */
+}

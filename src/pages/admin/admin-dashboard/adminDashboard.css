@@ -1,0 +1,31 @@
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+
+.appointment-table thead th {
+  background-color: #F4F0F0;
+  padding: 8px;
+  border:none; /* Border for header cells */
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000000;
+}
+
+.appointment-table tbody td {
+  padding: 8px;
+  border: none; /* Border for table cells */
+  font-size: 1.1rem;
+  font-weight: 400;
+  color:#000000;
+}
+
+.appointment-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Optional: alternating row color */
+}
+
+.appointment-table tbody tr:hover {
+  background-color: #e9e9e9; /* Optional: row hover effect */
+}
