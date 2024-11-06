@@ -2,7 +2,7 @@ import { Button, TextField } from "@/components";
 import { useState } from "react";
 import "./register.css"
 import SelectGender from "./SelectGender";
-import { useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
+import {  useLocation, useNavigate, useParams } from "react-router-dom";
 import { auth,db } from "@/services/firebase";
 import { setDoc,doc ,getDocs, query, where,collection} from "firebase/firestore";
 import { createUserWithEmailAndPassword } from "firebase/auth";
