@@ -1,6 +1,6 @@
 import { Button, TextField } from "@/components";
 import { useState } from "react";
-import "@/pages/login/components/components/register/register.css"
+import "./register.css"
 import SelectGender from "./SelectGender";
 import { useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
 import { auth,db } from "@/services/firebase";
